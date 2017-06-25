@@ -1,6 +1,6 @@
 # ZeroBasedIndexing
 
-[![Build Status](https://travis-ci.org/simonster/ZeroBasedIndexing.jl.svg?branch=master)](https://travis-ci.org/simonster/ZeroBasedIndexing.jl)
+[![Build Status](https://travis-ci.org/djsegal/ZeroBasedIndexing.jl.svg?branch=master)](https://travis-ci.org/djsegal/ZeroBasedIndexing.jl)
 
 This package implements zero-based indexing in Julia. Zero-based indexing affects only your code. Functions from other packages/modules will still function properly, but when you index into the arrays they return, the indices will start at 0 instead of 1. This makes it easy to gradually transition your codebase from obsolete one-based indexing to proper zero-based indexing.
 
