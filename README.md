@@ -22,12 +22,12 @@ julia> for i = 0:2 println(x[i]) end
 2
 3
 
-julia> x[0] = 2
-2
+julia> x[0] = 0
+0
 
 julia> x
 3-element Array{Int64,1}:
- 2
+ 0
  2
  3
 ```
