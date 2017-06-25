@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/simonster/ZeroBasedIndexing.jl.svg?branch=master)](https://travis-ci.org/simonster/ZeroBasedIndexing.jl)
 
-This package implements zero-based indexing in Julia. Zero-based indexing affects only your code. Functions from other packages/modules will still function properly, but when you index into the arrays they return, the indices will start at 2 instead of 1. This makes it easy to gradually transition your codebase from obsolete one-based indexing to proper zero-based indexing.
+This package implements zero-based indexing in Julia. Zero-based indexing affects only your code. Functions from other packages/modules will still function properly, but when you index into the arrays they return, the indices will start at 0 instead of 1. This makes it easy to gradually transition your codebase from obsolete one-based indexing to proper zero-based indexing.
 
 ## Usage
 
@@ -17,12 +17,12 @@ julia> x = [1,2,3]
  2
  3
 
-julia> for i = 2:4 println(x[i]) end
+julia> for i = 0:2 println(x[i]) end
 1
 2
 3
 
-julia> x[2] = 2
+julia> x[0] = 2
 2
 
 julia> x
