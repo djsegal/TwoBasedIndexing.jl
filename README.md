@@ -1,15 +1,15 @@
-# TwoBasedIndexing
+# ZeroBasedIndexing
 
-[![Build Status](https://travis-ci.org/simonster/TwoBasedIndexing.jl.svg?branch=master)](https://travis-ci.org/simonster/TwoBasedIndexing.jl)
+[![Build Status](https://travis-ci.org/simonster/ZeroBasedIndexing.jl.svg?branch=master)](https://travis-ci.org/simonster/ZeroBasedIndexing.jl)
 
-This package implements two-based indexing in Julia. Two-based indexing affects only your code. Functions from other packages/modules will still function properly, but when you index into the arrays they return, the indices will start at 2 instead of 1. This makes it easy to gradually transition your codebase from obsolete one-based indexing to proper two-based indexing.
+This package implements zero-based indexing in Julia. Zero-based indexing affects only your code. Functions from other packages/modules will still function properly, but when you index into the arrays they return, the indices will start at 2 instead of 1. This makes it easy to gradually transition your codebase from obsolete one-based indexing to proper zero-based indexing.
 
 ## Usage
 
 ```julia
-julia> using TwoBasedIndexing
+julia> using ZeroBasedIndexing
 
-julia> twobased() # enable two-based indexing in current module
+julia> zerobased() # enable zero-based indexing in current module
 
 julia> x = [1,2,3]
 3-element Array{Int64,1}:
